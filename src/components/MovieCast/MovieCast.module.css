@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 260px;
+}
+.title {
+  color: orange;
+}
+.list {
+  padding: 0;
+}

@@ -30,12 +30,12 @@ const MovieCast = () => {
 
   return (
     <div>
-      <h2 className={css.mainText}>Movie Cast</h2>
+      <h2 className={css.title}>Movie Cast</h2>
       <ul className={css.list}>
         {cast && cast.length > 0 ? (
           cast.map((actor) => (
             <li className={css.card} key={actor.cast_id}>
-              <strong>{actor.name}</strong> as {actor.character}
+              <p>{actor.name}</p> as {actor.character}
               <img
                 className={css.picture}
                 src={
