@@ -1,0 +1,31 @@
+.div {
+  display: flex;
+  gap: 24px;
+}
+.container {
+  flex-direction: column;
+}
+.title {
+  size: 20px;
+  color: orange;
+}
+.container {
+  display: flex;
+}
+.text {
+  size: 14px;
+  align-items: flex-start;
+}
+.ul {
+  margin: 0;
+  padding: 0;
+}
+.active {
+  color: white;
+}
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: orange;
+  color: black;
+}

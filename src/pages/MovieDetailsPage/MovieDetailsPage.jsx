@@ -49,17 +49,15 @@ const MovieDetailsPage = () => {
             />
           </div>
           <div className={css.container}>
-            <h1 className={css.title}>{css.title}</h1>
+            <h1 className={css.title}>{movie.title}</h1>
             <h2 className={css.text}>Overview</h2>
             {movie.overview}
             <h2 className={css.text}>Budget</h2> {movie.budget}
-            <h2 className={css.text}>Origin country</h2>{" "}
-            {movie.origin_country}
-            <h2 className={css.text}>Genres</h2>
-             </div>
+            <h2 className={css.text}>Origin country</h2> {movie.origin_country}
+          </div>
         </div>
       )}
-      <ul>
+      <ul className={css.ul}>
         <li className={css.item}>
           <NavLink className={css.link} to="cast">
             Movie Cast

@@ -12,7 +12,7 @@ const Navigation = () => {
         <div classame={css.container}>
           <nav className={css.nav}>
             <NavLink  className={buildNavLikClass} to="/">Home</NavLink>
-            <NavLink  to="/movies">Movies</NavLink>
+            <NavLink  className={buildNavLikClass} to="/movies">Movies</NavLink>
           </nav>
         </div>
       </header>

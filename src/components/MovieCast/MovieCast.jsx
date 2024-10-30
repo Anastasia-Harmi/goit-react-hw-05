@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { fetchCastByID } from "../../api/filmApi";
-import styles from "./MovieCast.module.css";
+import css from "./MovieCast.module.css";
 
 const MovieCast = () => {
   const [cast, setCast] = useState(null);
@@ -30,14 +30,14 @@ const MovieCast = () => {
 
   return (
     <div>
-      <h2 className={styles.mainText}>Movie Cast</h2>
-      <ul className={styles.list}>
+      <h2 className={css.mainText}>Movie Cast</h2>
+      <ul className={css.list}>
         {cast && cast.length > 0 ? (
           cast.map((actor) => (
-            <li className={styles.card} key={actor.cast_id}>
+            <li className={css.card} key={actor.cast_id}>
               <strong>{actor.name}</strong> as {actor.character}
               <img
-                className={styles.picture}
+                className={css.picture}
                 src={
                   actor.profile_path
                     ? `https://image.tmdb.org/t/p/w500${actor.profile_path}`
