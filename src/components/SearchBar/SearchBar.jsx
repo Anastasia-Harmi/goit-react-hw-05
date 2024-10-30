@@ -2,7 +2,7 @@ import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 import css from "./SearchBar.module.css";
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = ({ onSubmit }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }) => {
   };
   return (
     <div>
-      <form onSearch={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           className={css.input}
           type="text"

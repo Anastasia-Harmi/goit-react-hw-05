@@ -11,8 +11,8 @@ const Navigation = () => {
       <header className={css.header}>
         <div classame={css.container}>
           <nav className={css.nav}>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/movies">Movies</NavLink>
+            <NavLink  className={buildNavLikClass} to="/">Home</NavLink>
+            <NavLink  to="/movies">Movies</NavLink>
           </nav>
         </div>
       </header>
